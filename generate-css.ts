@@ -17,10 +17,4 @@ const final = css`
   ${pluginOverrides}
 `
 
-writeFileSync(
-  resolve(
-    'C:\\Users\\Synqat\\AppData\\Roaming\\Vencord\\themes',
-    'vencord.theme.css',
-  ),
-  final,
-)
+writeFileSync(resolve(__dirname, 'raw.css'), final)
