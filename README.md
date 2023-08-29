@@ -1,4 +1,5 @@
 # Vencord Discord Theme
+![image](https://github.com/Synqat/vencord-theme/assets/29748817/998e357a-dd1b-4335-bdd0-ee6acb9f042c)
 
 ## Installation
 1. Click this to download the latest theme release: [vencord.theme.css](https://github.com/Synqat/vencord-theme/releases/download/main/vencord.theme.css)
@@ -8,11 +9,3 @@
    ![image](https://github.com/Synqat/vencord-theme/assets/29748817/80b5b869-4dca-4c0b-b921-16ac2c0d0d03)
 4. Turn it on! <br/>
    ![image](https://github.com/Synqat/vencord-theme/assets/29748817/9ff9e6f5-d5c9-4494-98c9-4405cb57996a)
-
-### Before
-![image](https://github.com/Synqat/vencord-theme/assets/29748817/648ff282-6d24-4480-be34-05a1f942479f)
-
-### After
-![image](https://github.com/Synqat/vencord-theme/assets/29748817/998e357a-dd1b-4335-bdd0-ee6acb9f042c)
-
-
