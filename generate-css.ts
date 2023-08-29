@@ -1,3 +1,4 @@
+import { credits } from 'styles/credits'
 import { pluginOverrides } from 'styles/plugin.overrides'
 import { css } from 'utils/css'
 import { discordCustomStyling } from 'styles/discord.custom-styling'
@@ -8,6 +9,8 @@ import { resolve } from 'node:path'
 import { writeFileSync } from 'node:fs'
 
 const final = css`
+  ${credits}
+
   ${imports}
   ${root}
   
