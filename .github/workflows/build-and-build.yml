@@ -22,7 +22,7 @@ jobs:
       - uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: './theme.css'
+          file: 'theme.css'
           tag: ${{ github.ref }}
           asset_name: 'vencord.theme.css'
           overwrite: true
