@@ -1,0 +1,33 @@
+{
+  "name": "vencord-theme",
+  "version": "1.0.0",
+  "author": "@Synqat",
+  "license": "MIT",
+  "packageManager": "yarn@3.6.3",
+  "scripts": {
+    "css:post": "yarn postcss --use autoprefixer --use cssnano -o theme.css raw.css",
+    "css:generate": "yarn tsx generate-css.ts",
+    "build": "yarn tsx generate.ts",
+    "build:watch": "yarn cross-env WATCH=1 yarn build",
+    "dev:server": "yarn serve . -l 8080",
+    "dev": "yarn concurrently \"yarn dev:server\" \"yarn build:watch\""
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9",
+    "autoprefixer": "^10.4.15",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.1",
+    "cssnano": "^6.0.1",
+    "execa": "^8.0.1",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "postcss-discard-comments": "^6.0.0",
+    "prettier": "^2.8.7",
+    "serve": "^14.2.1",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
