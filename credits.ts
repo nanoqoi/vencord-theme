@@ -3,7 +3,7 @@ import { writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
 const CREDITS = {
-  name: packageJSON.theme.name,
+  name: `${packageJSON.theme.name} (v${packageJSON.version})`,
   author: packageJSON.author,
   version: packageJSON.version,
   description: packageJSON.theme.description,
@@ -17,7 +17,7 @@ const generateCredits = () =>
     CREDITS,
   )
     .map(([key, value]) => {
-      return `@${key}: ${value}`
+      return `@${key} ${value}`
     })
     .join('\n  ')}\n`
 

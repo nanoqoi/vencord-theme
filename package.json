@@ -1,7 +1,7 @@
 {
   "name": "vencord-theme",
   "version": "1.0.0",
-  "author": "@Synqat",
+  "author": "Synqat",
   "license": "MIT",
   "packageManager": "yarn@3.6.3",
   "scripts": {
