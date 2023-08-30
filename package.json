@@ -5,7 +5,7 @@
   "license": "MIT",
   "packageManager": "yarn@3.6.3",
   "scripts": {
-    "build": "yarn tsx credits.ts && yarn tsx build.ts",
+    "build": "yarn tsx generate.ts && yarn tsx build.ts",
     "server": "yarn serve ./dist -l 8080"
   },
   "theme": {

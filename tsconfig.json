@@ -10,5 +10,7 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["build.ts", "credits.ts"]
+  "include": ["build.ts",
+    "generate.ts"
+  ]
 }

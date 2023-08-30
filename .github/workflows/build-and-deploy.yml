@@ -83,6 +83,6 @@ jobs:
           commit_user_name: "GitHub Actions"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "GitHub Actions <github-actions[bot]@users.noreply.github.com>"
-          file_pattern: "package.json src/styles/credits.sass versions/*.css"
+          file_pattern: "package.json src/styles/credits.sass versions/*.css theme.css"
           push_options: '--force'
           skip_fetch: false
