@@ -10,7 +10,6 @@
 ```css
 @import "https://raw.githubusercontent.com/Synqat/vencord-theme/main/versions/latest.css";
 ```
-5. Now any changes will update automatically for you!
 
 ### Method 2 - Manual versions
 1. Open your user settings in Vencord (Discord)
@@ -20,3 +19,6 @@
 5. Place the downloaded CSS file into the folder you opened in step 3
 6. Go back to Vencord -> Themes in your user settings
 7. Enable the theme by clicking the toggle in the newly appeared box
+
+## There's a bug!
+Report any CSS bugs in the [Issues tab](https://github.com/Synqat/vencord-theme/issues).
