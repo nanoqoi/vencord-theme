@@ -7,22 +7,17 @@ html
 [class*='membersWrap'] 
   background-color: var(--synqats-gb-bg-dim)
 
+div[class*='sidebar']
+  margin-right: 16px
 
-div[class*='chat']:not(div[class*='expression-picker-chat-input-button']) 
-  padding-bottom: 16px
-  padding-left: 16px
+div[class*='container'] div[class*='base']:not([class*='baseLayer']):not([class*='member']):not([class*='typing'])
   padding-right: 16px
-  border-radius: 16px
-  background-color: transparent
+  padding-bottom: 16px
+  div[class*='chat']
+    --bg-overlay-chat: var(--synqats-gb-bg-dim)
 
-
-section[class*='title'] 
+section[class*='title']
   margin-bottom: 16px
-
-
-div[class*='sidebar'] 
-  margin-bottom: 16px
-
 
 div[class*='sidebar'],
 section[class*='title'],
@@ -46,7 +41,24 @@ section[class*='panels']
 div[class*='members']
   [class*='member']
     margin-left: unset
+    background: unset
 
+div[class*='gradientContainer'][class*='gradientBottom']
+  --gradient-color: 20, 22, 23
+  background: linear-gradient(#141617, rgba(var(--gradient-color),.738) 19%, rgba(var(--gradient-color),.541) 34%, rgba(var(--gradient-color),.382) 47%, rgba(var(--gradient-color),.278) 56.5%, rgba(var(--gradient-color),.194) 65%, rgba(var(--gradient-color),.126) 73%, rgba(var(--gradient-color),.075) 80.2%, rgba(var(--gradient-color),.042) 86.1%, rgba(var(--gradient-color),.021) 91%, rgba(var(--gradient-color),.008) 95.2%, rgba(var(--gradient-color),.002) 98.2%,transparent)
+
+div[class*='bottomControls'],
+div[class*='regionSelectName']
+  --primary-300: var(--synqats-gb-fg-0)
+
+div[role="dialog"] div[class*='footer']
+  --primary-200: var(--synqats-gb-fg-0)
+
+input[class*='inputDefault']
+  background-color: var(--synqats-gb-bg-0)
+
+div[class*='searchBar']
+  background-color: var(--synqats-gb-bg-dim)
 
 div[class*='members'] 
   padding: 8px
