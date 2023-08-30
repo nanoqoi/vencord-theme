@@ -68,15 +68,21 @@ jobs:
           asset_name: 'vencord.theme-${{ needs.version.outputs.version }}.css'
           body: ${{ needs.version.outputs.changelog }}
 
+      - name: Copy file to versions folder and update latest
+        run: |
+          cp dist/theme.css versions/vencord.theme-${{ needs.version.outputs.version }}.css
+          rm versions/latest.css
+          cp dist/theme.css versions/latest.css
+
       - name: Commit updated package.json & credits.sass
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: main
-          commit_message: "Bump package.json & credits.sass version to ${{ needs.version.outputs.version }}"
+          commit_message: "Update versions (${{ needs.version.outputs.version }})"
           commit_options: "--no-verify"
           commit_user_name: "GitHub Actions"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "GitHub Actions <github-actions[bot]@users.noreply.github.com>"
-          file_pattern: "package.json src/styles/credits.sass"
+          file_pattern: "package.json src/styles/credits.sass versions/*.css"
           push_options: '--force'
           skip_fetch: false
