@@ -10,8 +10,9 @@ jobs:
     name: Versioning
     runs-on: ubuntu-latest
     outputs:
-      version: ${{ steps.version.outputs.version }}
-      tag: ${{ steps.version.outputs.tag }}
+      tag: ${{ steps.version.outputs.new_tag }}
+      version: ${{ steps.version.outputs.new_version }}
+      changelog: ${{ steps.version.outputs.changelog }}
     steps:
       - uses: actions/checkout@v3
 
@@ -30,13 +31,8 @@ jobs:
           name: ${{ steps.version.outputs.new_tag }}
           body: ${{ steps.version.outputs.changelog }}
 
-      - name: Export version
-        run: |
-          echo "::set-output name=tag::${{ steps.version.outputs.new_tag }}"
-          echo "::set-output name=version::${{ steps.version.outputs.new_version }}"
-          echo "::set-output name=changelog::${{ steps.version.outputs.changelog }}"
-
   build-and-deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
     needs:
       - version
