@@ -1,6 +1,5 @@
 node_modules/
-raw.css
-theme.css
+dist/
 .idea
 
 # yarn

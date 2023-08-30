@@ -1,0 +1,21 @@
+
+// Plugin: MemberCount
+html:root
+  --vc-membercount-color: var(--synqats-gb-fg-0)
+
+#vc-membercount
+  margin-top: 0 !important
+  padding-block: 8px
+  --primary-400: var(--vc-membercount-color)
+
+// Plugin: MessageLogger
+.messagelogger-deleted
+  background-color: var(--synqats-gb-bg-diff-red)
+  border-left: 4px solid var(--synqats-gb-accent-red)
+
+// Plugin: VoiceMessages
+div[class*='messageAttachment']
+  div[class*='ripple']
+    --brand-500: var(--synqats-gb-bg-5) !important
+  canvas[class*='waveform']
+    filter: grayscale(1)
