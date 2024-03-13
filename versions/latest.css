@@ -89,6 +89,7 @@ html:root,
   --bg-overlay-selected: var(--synqats-gb-bg-2);
   --bg-overlay-hover: var(--synqats-gb-bg-4);
   --bg-overlay-active: var(--synqats-gb-bg-1);
+  --embed-title: var(--synqats-gb-fg-0);
   --text-normal: var(--synqats-gb-fg-0);
   --text-muted: var(--synqats-gb-grey-0);
   --interactive-active: var(--synqats-gb-fg-1);
@@ -461,6 +462,19 @@ div[class*=searchBar] {
 div[class*=members] {
   padding: 8px;
   background-color: var(--synqats-gb-bg-word);
+}
+
+div[class*=tabContainer_dc7d02] {
+  color: var(--synqats-gb-fg-0) !important;
+}
+
+div[class*=tabItemSelected__3dfe7] {
+  color: var(--synqats-gb-fg-1) !important;
+  border-bottom-color: var(--synqats-gb-fg-1) !important;
+}
+
+div[class*=segmentControl_b89f83] {
+  padding: 0 30px;
 }
 
 main[class*=chatContent] {
