@@ -36,8 +36,7 @@ section[class*='panels']
 
 
 div[class*='members']
-  [class*='member']
-    margin-left: unset
+  [class*=member]:not([class*='vc-membercount-online-dot'])
     background: unset
 
 div[class*='gradientContainer'][class*='gradientBottom']
@@ -66,7 +65,7 @@ main[class*='chatContent']
 
 [class*='member']
   [class*='subText']
-    display: none
+    display: flex
 
 [class*='membersGroup']
   height: unset
